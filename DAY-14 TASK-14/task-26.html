@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Web Page</title>
+    <style>
+        body{
+            background-color: #ffffff;
+        }
+        #first{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 20px;
+            color: #004080;
+            letter-spacing: 0.15em; 
+        }
+        #first ul{
+             display: flex; 
+             align-items: center;
+             justify-content: space-between;
+             list-style-type: none;
+             margin-right: 50px;
+             color: white;     
+        }
+
+        #first ul a {
+            text-decoration: none;
+        }
+        #first ul a li {
+            padding: 20px;
+        }
+        .hero{
+            position: relative;
+            height: 600px;
+            width: 100%;
+            background: url('joel-jasmin-forestbird-efuwb5eBDrI-unsplash.jpg');
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center ;
+        }
+        .coin h1{
+            font-size: 60px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #00264d;
+        }
+        .coin p{
+             font-size: 14px;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            color: #336699;
+        }
+
+        .pics{
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            background-image: i;
+        }
+        .photo{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 20px;
+            margin: 10px;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+       
+         .menu{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            color: #004080;
+            letter-spacing: 0.15em; 
+            cursor: pointer;
+        }
+        .menu ul
+        {
+             display: flex; 
+             align-items: center;
+             justify-content: center;
+             list-style-type: none;
+             color: rgba(255, 255, 255, 0.795);  
+        }
+        .menu ul a {
+            text-decoration: none;
+        }
+        .menu ul a li {
+            padding: 20px;
+        }
+         .he
+         {
+            text-align: center;
+         } 
+         .about{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            background-color:#f0f7f9;
+        }
+        .about-text{
+            margin-right: 20px;
+        }
+        .about-text h2{
+           text-align: center;
+            margin-bottom: 15px;
+            font-size: 45px;
+        }
+        .about-text p{
+            margin-bottom: 15px;
+            color: #333
+        }
+        .about-image{
+            text-align: center;
+        }
+        .about-image img{
+         width: 400px;
+         height: 200px;
+         margin-top: 0;
+        }   
+         .about-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 50px 200px;
+  font-family: 'Arial', sans-serif;
+  color: #555;
+  line-height: 1.6;
+  background-color: #f0f7f9 ;
+}
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: 300;
+  color: #333;
+}
+.about-container {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+.about-text {
+  flex: 1;
+}
+.about-text p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+.about-media {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 30px;
+}
+.stats-grid {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  text-align: center;
+  gap: 25px;
+}
+
+.number {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #444;
+}
+.item{
+    border: 1px solid;
+    text-align: center;
+    width: 90px;
+    padding: 10px 30px 10px 30px;
+    background: white;
+}
+
+.label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #888;
+  margin-top: 5px;
+}
+.about-container {
+    flex-direction: row;
+  }
+
+        .contact{
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f7f9;
+            font-size: large;
+        }
+        .contact h2{
+            font-size: 25px;
+           margin-bottom: 10px;
+           color: #333;
+
+        }
+        .contact p{
+            font-size: 19px;
+            color: #708787;
+            margin-bottom: 30px;
+        }
+        .info{
+           max-width: 600px;
+           margin:  auto;
+           text-align: left;
+        }
+        .info button{
+            background-color:#4a5f6d;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            height: 40px;
+            width: 100%;
+        }
+        .info button:hover{
+            background-color: #7fb3f0;
+        }
+         footer{
+            text-align: center;
+            padding: 10px;
+            color: #333;
+         }
+         .take{
+            background-color: #f0f7f9 ;
+         }
+         .less{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            gap: 20px;
+            background-color: #e9f5f8;
+            color: #777;
+           
+         }
+        
+         .copay{
+            margin-top: 15px;
+            font-size: 13px;
+            color: #777777;
+            background-color:#e9f5f8 ;
+         }  
+    </style>
+</head>
+<body>
+    <header>
+
+        <div id="first">
+          
+           <h2>&#10054 WINTER</h2>
+ 
+       
+
+        <nav>
+            <ul>
+              <a href="#HOME"><li>&#10054HOME</li></a>
+                <a href="#GALLERY"><li>&#10054GALLERY</li></a>
+                <a href="#ABOUT"><li>&#10054ABOUT</li></a>
+                <a href="#CONTACT"><li>&#10054CONTACT</li></a>
+            </ul>
+        </nav>
+    </header>
+     </div>
+     <div class="hero">
+     <div class="coin">
+        <h1>Winter Momemts</h1>
+        <p>A COLLECTION OF FROZEN BEAUTY</p>
+        </div>
+    </div>
+
+     <div class="menu">
+        <ul>
+            <a href="#ALL"><li>ALL</li></a>
+            <a href="LANDSCAPES"><li>LANDSCAPES</li></a>
+            <a href="DECORATIONS"><li>DECORATIONS</li></a>
+            <a href="FOOD"><li>FOOD</li></a>
+            <a href="FAMILY"> <li>FAMILY</li></a>
+        </ul>
+     </div>
+       <section class="pics">
+        <div class="photo">
+     <img src="https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?w=800&q=80" width="450px" height="600px" alt="">
+       </div>
+       <div class="photo">
+        <img src="https://images.unsplash.com/photo-1491002052546-bf38f186af56?w=800&q=80"  width="450px" height="400px" alt="">
+       </div>
+
+       <div class="photo">
+        <img src="https://images.unsplash.com/photo-1476820865390-c52aeebb9891?w=800&q=80"  width="450px" height="400px" alt="">
+       </div>
+
+       </section>
+       
+       <section class="pics">
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?w=800&q=80" width="450px" height="600px" alt="">
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1543589077-47d81606c1bf?w=800&q=80" width="450px" height="600px" alt="">
+        </div>
+
+        <div class="photo">
+
+            <img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=800&q=80" width="450px" height="600px"  alt="">
+        </div>
+
+       </section>
+
+
+       <section class="pics">
+              <div class="photo">
+                <img src="https://images.unsplash.com/photo-1542990253-0d0f5be5f0ed?w=800&q=80" width="450px" height="600px"  alt="">
+              </div>
+
+              <div class="photo">
+                <img src="https://images.unsplash.com/photo-1514517521153-1be72277b32f?w=800&q=80" width="450px" height="600px" alt="">
+                
+              </div>
+
+              <div class="photo">
+                <img src="https://images.unsplash.com/photo-1514517220017-8ce97a34a7b6?w=800&q=80" width="450px" height="600px" alt="">
+              </div>
+        
+       </section>
+
+       <section class="pics">
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?w=800&q=80" width="350px" height="400px" alt="">
+        </div>
+
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1544776193-352d25ca82cd?w=800&q=80" width="350px" height="400px" alt="">
+        </div>
+       </section>
+       <section class="sea">
+    <section class="about-section">
+  <h2 class="section-title">About</h2>
+  
+  <div class="about-container">
+    <div class="about-text">
+      <p>Capturing the serene beauty of winter landscapes has been my passion for over a decade. Each photograph tells a story of frozen moments, quiet snowfalls, and the peaceful stillness that blankets the world during the coldest months.</p>
+      
+      <p>From the majestic mountain peaks covered in pristine snow to intimate family moments wrapped in winter warmth, my work celebrates the unique beauty that this season brings. Through my lens, I aim to preserve the fleeting magic of winter—the way light dances on ice crystals, the cozy comfort of holiday gatherings, and the breathtaking landscapes transformed by snow.</p>
+      
+      <p>My photography has been featured in various publications and exhibitions, and I continue to explore new ways to capture the essence of winter's wonder.</p>
+    </div>
+
+    <div class="about-media">
+      <img src="https://images.unsplash.com/photo-1452802447250-470a88ac82bc?w=800&q=80" alt="Painter's Palette" class="profile-img">      
+      <div class="stats-grid">
+        <div class="item">
+          <span class="number">10+</span>
+          <span class="label">YEARS EXPERIENCE</span>
+        </div>
+        <div class="item">
+          <span class="number">500+</span>
+          <span class="label">PHOTOS CAPTURED</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+          <section class="contact">
+            <h2>Get in Touch</h2>
+            <p>Let's work together to capture your winter moments</p>
+            <form class="info">
+                <label for="name">NAME</label><br>
+                <input type="text" id="name" placeholder="" size="100"><br><br>
+                <label for="email">EMAIL</label><br>
+                <input type="text" id="EMAIL" size="100" placeholder=""><br><br>
+                <label for="message">MESSAGE</label><br>
+                <textarea name="message" id="message" rows="10"></textarea><br><br>
+                <button class="button">
+                    Send Message
+                </button>
+                <div class="less">
+                <p> 📧hello@winterportfolio.com</p>
+                <p> 📱+1 (555) 123-4567</p>
+                <p> 📍 Colorado, USA</p>
+             </div>
+            </form>
+          </section>
+         </div>
+       </div>
+          <section class="take">
+              <footer>
+                <hr>
+            <div class="copay">
+                <p>&copy;2026 Winter Portfolio. Designed by TooPlate</p>
+            </div>
+        </footer>
+        </section>
+</body>
+</html>
+       
+
