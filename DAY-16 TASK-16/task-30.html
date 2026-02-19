@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BridgeArchitects</title>
+    <style>
+        .start{
+            background-image: url(h1-port-img-02-1.jpg.jpeg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+        }
+        .hero{
+            padding: 10px 8%;
+             min-height: 110vh;
+        }
+
+nav {
+    display: flex;
+}
+
+.logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    padding: 0px 10px 0px 1px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding-bottom: 100px;
+    gap: 60px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+
+}
+.dropdown-container{
+            position: relative;
+            display: inline-block;
+        }
+        .dropdown-content{
+            position: absolute;
+            background: white;
+            min-width: 200px;
+            display: none;
+            flex-direction: column;
+            padding: 15px 0;
+        }
+        .dropdown-content a{
+            color: black;
+            text-decoration: underline;
+            display:block;
+            padding: 10px 20px;
+            transition: 0.3s;
+        }
+        .dropdown-content a:hover {
+            background: #f3f3f3;
+        }
+        .dropdown-container:hover .dropdown-content {
+            display: flex;
+        }
+.main-text{
+           position: absolute;
+           bottom: 10px;
+           right: 80px;
+           color: white;
+           
+        }
+        .main-text h2{
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .main-text p{
+            font-size: 35px;
+            letter-spacing: 2px;
+        }
+.first{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px;
+        }
+        .first-text{
+            flex: 1;
+            max-width: 45%;
+        }
+        .first-text h1{
+            font-size: 1rem;
+            margin-bottom: 15PX;
+        }
+        .first-text p{
+            font-size: 2rem;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .read-more{
+            font-size: 1rem;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            border-bottom: 2px solid #333;
+        }
+        .image{
+            flex: 1;
+            max-width: 45%;
+            position: relative;
+        }
+        .image img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .arch{
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            background: #f9f9f9;
+        }
+        .colls{
+            flex: 1;
+            margin: 0 20px;
+        } 
+        .colls h2{
+            font-size: 1.5rem;
+            margin: 15px;
+            color: #333;
+        }
+        .colls p{
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #555;
+        }
+        .work{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 40px;
+            background-color: #0f0f0f;
+        }
+        .worktext{
+            flex: 1;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        .worktext h2{
+            font-size: 10px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ede8e8;
+            letter-spacing: 2px;
+
+        }
+        .worktext p{
+            font-size: 30px;
+            color: #ebe7e7;
+            
+        }
+        .workimage{
+            flex: 2;
+            text-align: center;
+        }
+        .workimage img{
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .container{
+            display: flex;
+            height: 500px;
+            width: 100%;
+            border: 1px solid;
+
+        }
+        .bar{
+            width: 20%;
+            padding: 20px;
+            text-align: center;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            writing-mode: sideways-lr;
+            align-items: flex-end;
+        
+        }
+        .bar p{
+            margin: 30px 0;
+            font-weight: bold;
+        }
+       
+        
+        .center{
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+         
+        }
+        .center img{
+            max-width: 50%;
+            height: 350px;  
+        }
+        .content{
+            width: 40%;
+            padding: 10px;
+            
+
+        }
+        .content p{
+            line-height: 2;
+            margin-top: 300px;
+            margin-right: 9px;
+           
+        }
+        .stage1 {
+            width: 100%;
+            height: 100vh; 
+            background-image: url('https://img.freepik.com/free-photo/business-people-doing-teamwork-startup-presentation-anlayzing-research-data-information-documents-planning-report-project-with-notes-paperwork-files-office-with-big-windows_482257-49771.jpg?t=st=1770981819~exp=1770985419~hmac=d3b108fafa5561b295f607e5ee52813e1826cc01202babf03109e37a59781bc9'); 
+            background-size: cover;
+            display: flex;
+            align-items: flex-end; 
+        }
+         .stage2 {
+            color: white;
+            padding: 40px;
+            max-width: 600px;
+            line-height: 1.4;
+        }
+
+        .stage2 h1 {
+            font-size: 2rem;
+            font-weight: 500px;
+            letter-spacing: 0.5px;
+        }
+        .block{
+            text-align: center;
+            align-items: center;
+            padding: 100px;
+           
+        }
+        .text{
+            font-size: 40px;
+            line-height: 1.8;
+            color: #555;
+        }
+        .sign .name{
+            font-size: 15px;
+            color: #777;
+        }
+        .sign .title{
+            font-size: 15px;
+            color: #777;
+        }
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+        }
+        .ca{
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 15px;
+        }
+        .ca img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        } .ca img{
+            transition: transform 0.3s ease;
+        }
+        .ca img:hover{
+            transform:scale(1.1);
+        }
+        .date{
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 6px;
+        }
+        h3{
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .bl{
+            text-align: center;
+            align-items: center;
+            padding: 200px;
+            font-size: 30px;
+            line-height: 1.8;
+        }
+       footer{
+            background-color: white;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+        }
+        .footercont{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+        }
+        .footersection h3{
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        .footersection ul{
+            list-style: none;
+            padding: 0;
+            font-size: 20px;
+        }
+        .footersection ul li{
+            margin-bottom: 8px;
+        }
+        .footersection li{
+            text-decoration: none;
+            color: #555;
+        }
+        .footersection li:hover{
+            color: #000;
+        }
+        .bottom{
+        text-align: center;
+        padding: 50px;
+        background-color: white;
+        }
+        
+    </style>
+    </head>
+<body>
+    <section class="start">
+<div class="hero">
+        <nav>
+            <div class="logo"> <b>BridgeArchitects</b></div>
+            <ul class="nav-links">
+               <li><a href="#">|Home</a></li>
+                     <li><a href="#">pages </a></li>
+                <li><a href="task-35.html">protfolio</a></li>
+                <li><a href="task-37.html">blog</a></li>
+                <li><a href="task-36.html">contact</a></li>
+            </ul>
+        </nav>
+        <div class="main-text">
+            <div class="background"></div>
+            <h2>Narayanan house </h2>
+            <p>Dream</p>
+        </div>
+        </section>
+    <section class="first">
+        <div class="first-text">
+           <h1>.ARCHITECT STUDIO</h1>
+            <p><b>>Architects excited about , affordability,
+                sustainability materials for every project and person
+           </b><br>
+            <a href class="read-more">readmore</a>
+        </div>
+
+        <div class="image">
+            <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/11/h1-img-01.jpg" alt="">
+            
+        </div>
+
+    </section>
+<div class="arch">
+        <div class="colls">
+            <h2><u>Design a perfect home <br>Download our brochure <br>
+             Ask us your questions our
+                <br> architure</u></h2>
+            
+        </div>
+        <div class="colls">
+            <h2>Urban Exteriors</h2>
+            <p>Purus sit amet vol utpat con sequat mauris <br>
+               nunc congue.Sed id semper risusin hend <br>rerit.
+               Facilisi etiam dig nissim diam quis <br>
+               enim. Quis auctor.</p>
+        </div>
+        <div class="colls">
+            <h2>Cityscapes Buildings</h2>
+            <p>Purus sit amet vol utpat con sequat mauris <br>
+             nunc congue.Sed id semper risusin hend <br>rerit.
+             Facilisi etiam dig nissim diam quis <br>
+             enim. Quis auctor.</p>
+        </div>
+    </div>
+
+    <div class="work">
+        <div class="worktext">
+            <h2>.OUR WORK</h2>
+            <p>Check out our projects</p>
+        </div>
+        <div class="workimage">
+            <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2023/01/h1-port-img-03-1.jpg" alt="">
+        </div>
+    </div>
+    <div class="container">
+        <div class="bar">
+            <p>Planning</p><hr>
+            <p>Exterior</p><hr>
+            <p>Residential</p><hr>
+            <p>Interior</p><hr>
+
+        </div>
+        <div class="center">
+            <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/h11-port-img-12-hover.jpg" alt="">
+        </div>
+        <div class="content">
+            <p>
+                Lorem ipsum dolor sit amet consectetur,<br> 
+                 adipisicing elit. Modi at iusto voluptas dolor <br>
+                 id facilis eius necessitatibus impedit. 
+            </p>
+            <a href class="read-more">read-more</a>
+        </div>
+    </div>
+    <div class="stage1">
+    <div class="stage2">
+        <h1>The whimsical feel of Villa Esther<br> begins with the Neo-Modern <br>gateway in the style of Le Corbusier's <br>Villa Savoye.</h1>
+    </div>
+</div>
+<div class="block">
+        <p class="text">
+            Consuli norum eget magna.Quis varius quam quisqye id . <br>
+            Amet justo donec enim diamvulputate ut pharetra sit. <br>
+            nunc eget lorem dolor phatera len.
+        </p>
+        <p class="sign">
+            <span class="name">MIIKE NICHOLSON /</span>
+            <span class="title">GREEN PROJECTS</span>
+        </p>
+    </div>
+    <div class="grid">
+        <div class="ca">
+            <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/blog-4.jpg" alt="">
+            <p class="date">December 14, 2022 / INTERVIEWS</p>
+            <h3>Studio Hiroshi Cuisine And Bar Innovative Interior Vision</h3>
+        </div>
+        <div class="ca">
+            <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/blog-3.jpg" alt="">
+            <p class="date">December 14, 2022 / INTERVIEWS</p>
+            <h3>Zara Madid speaking about Her Influence And Creative Vision</h3>
+        </div>
+        <div class="ca">
+            <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/blog-2.jpg" alt="">
+            <p class="date">December 14, 2022 / INTERVIEWS</p>
+            <h3>Glass Wall Facade And How TO Design It With AluProfiles</h3>
+        </div>
+        <div class="ca">
+            <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/blog-1.jpg" alt="">
+            <p class="date">December 14, 2022 / INTERVIEWS</p>
+            <h3>Coexisting With The Landscape Is The Main Rules</h3>
+        </div>
+    </div>
+    <div class="bl">
+       <h2>Lets make something beautiful together</h2>
+       <p><u>contact us</u></p>
+       </div>
+    <hr> 
+    <footer>
+            <div class="footercont"><h1>Bridge <br>Architects</h1>
+                <div class="footersection">
+                    <h3>SOCIAL</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Behance</li>
+                        <li>Linkdin</li>
+                    </ul>
+                </div>
+                <div class="footersection">
+                    <h3>INFO</h3>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Terms</li>
+                        <li>Studio</li>
+                    </ul>
+                </div>
+                  <div class="footersection">
+                    <h3>CONTACT</h3>
+                    <ul>
+                    <li>12 Terra Str ,NY</li>
+                    <li>Phone: +585 889 9964</li>
+                    <li>Email: bridge@example.com</li>
+                    </ul>
+                  </div>
+            </div>
+            <hr>
+            <div class="bottom">
+                <p>&copy; 2024 QODEINTERACTIVE</p>
+            </div>
+        </footer>
+</body>
+</html>

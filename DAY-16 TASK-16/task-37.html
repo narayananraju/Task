@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <style>
+           body{
+        background-color:#ffffff;
+    }
+
+      nav {
+     display: flex;
+     padding: 0px 0px 0px 0px;
+    }
+
+      .log {
+      font-size: 40px;
+      font-weight: bold;
+      color: rgb(23, 20, 20);
+      margin-left: 1px;
+    }
+
+      .nav-links {
+     list-style: none;
+      display: flex;
+   
+      gap: 20px;
+    }
+
+     .nav-links a {
+     text-decoration: none;
+     color: rgb(23, 20, 20);
+     
+    }
+
+    .read{
+        padding: 15px 30px;
+        background: #f5f5f5;
+        font-size: 14px;
+    }
+    .read a{
+        text-decoration: none;
+        color: #555;
+    }
+    .read span{
+        color: #999;
+    }
+    .contain{
+        display: flex;
+        padding: 30px;
+    }
+    .blog{
+        flex: 3;
+        margin-left: 20px;
+    }
+    .blog img{
+        width: 100%;
+        border-radius: 8px;
+    }
+    .sidebar{
+        flex: 1;
+        background-color: #fafafa;
+        padding: 20px;
+        border-left: 1px solid #ddd;
+    }
+    .searchbox input{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .cate h3{
+        margin-top: 20px;
+        font-size: 16px;
+    }
+    .cate ul{
+        list-style: none;
+        padding: 0;
+    }
+    .cate li{
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+    }
+
+    .container{
+        display: flex;
+        gap: 20px;
+    }
+    .content{
+        flex: 3;
+    }
+    .content h1{
+        font-size: 2.8rem;
+        margin-left: 28px;
+    }
+    .content p{
+        margin-left: 28px;
+        color: rgb(113, 109, 109);
+    }
+    .side{
+        flex: 1;
+        background: #f9f9f9;
+        padding: 15px;
+    }
+   
+    .side h2{
+        font-size: 20px;
+        color: #140a0a;
+
+    }
+    .side p{
+        color: gray;
+    }
+    .tainer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+    }
+    .quote{
+        flex: 1;
+        font-size: 1.3rem;
+        line-height: 1.6;
+        color: black;
+        margin-left: 20px;
+    }
+    .quote span{
+        display: block;
+        margin-top: 10px;
+    }
+    .news{
+        flex: 1;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        height: 350px;
+    }
+    .box{
+        background: #3a3a3a;
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+    }
+    .box h2{
+        margin-bottom: 15px;
+    }
+    .box input{
+        padding: 10px;
+        width: 70%;
+        border: none;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    .send{
+        padding: 10px 20px;
+        background: white;
+        color: #0a2a5e;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .layout{
+        display: flex;
+        min-height: 100vh;
+    }
+    .hero{
+        flex: 2;
+    }
+    .hero img{
+        width: 90%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .coll{
+        display: grid;
+        grid-template-columns: repeat(2,2fr);
+     
+    }
+    .coll img{
+        width: 80%;
+        border-radius: 6px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+
+    }
+    .connect{
+        background-color: #eceef1;
+        padding: 30px 100px;
+    }
+    .titles{
+        font-size: 20px;
+        color: #333;
+        text-decoration: underline;
+    }
+.video{
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+     .contai{
+        display: flex;
+        gap: 20px;
+    }
+    .conte{
+        flex: 3;
+    }
+    .conte h1{
+        font-size: 2rem;
+        margin-left: 28px;
+    }
+    .conte p{
+        margin-left: 28px;
+        color: rgb(113, 109, 109);
+        margin-bottom: 50px;
+    }
+    footer{
+            background-color: #f9f9f9;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+            margin-top: 150px;
+            margin-bottom: 50px;
+        }
+        .footercont{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .footersection h3{
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: rgb(150, 147, 147);
+        }
+        .footersection ul{
+            list-style: none;
+            padding: 0;
+            font-size: 12px;
+        }
+       
+        
+        .footersection ul li{
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+        .footersection li{
+            text-decoration: underline;
+            color: #323232;
+        }
+        .footersection li:hover{
+            color: #000;
+        }
+        .bottom{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+           font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="start">
+    <div class="hero">
+        <nav>
+            <div class="log"> <b>BridgeArchitects</b> 
+            </div>
+            <ul class="nav-links">
+               <li><a href="#">|Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">protfolio</a></li>
+                <li><a href="#">blog</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <nav class="read">
+        <a href="#"><span>Home</span></a> / <span>Blog</span>
+    </nav>
+
+    <div class="contain">
+        <div class="blog">
+            <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/blog-4a.jpg" alt="">
+        </div>
+
+        <div class="sidebar">
+            <div class="searchbox">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="cate">
+                <h3>Blog Categories</h3>
+                <ul>
+                    <li>ARCHITECTURE</li>
+                    <li>INTERVIEWS</li>
+                    <li>LANDSCAPE ARCHITECTURE</li>
+                    <li>MATERIALS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+   <div class="container">
+    <main class="content">
+        <h1>14 Dec Living Room Trends For The <br>
+        Upcoming Season 2024</h1>
+        <p class="meta">Posted at 21:54H in Landscape Architecture . 0 Comments</p>
+    </main>
+    
+    <div class="side">
+        <h2>Read Next</h2>
+        <p>LANDSCAPE ARCHITECTURE</p>
+
+         <h2>Living Room Trends For The <br>
+             Upcoming Season 2024</h2>
+
+             <p>LANDSCAPE ARCHITECTURE</p>
+             <h3>Frank Gehry</h3>
+
+    </div>
+   </div>
+
+   <div class="tainer">
+    <div class="quote">
+        <h1>"Architecture should speak of it's time and place, but <br>
+            yearn for timelessness. "</h1>
+            <span>- FRANK GEHRY</span>
+    </div>
+    <div class="news">
+        <div class="box">
+            <h2>Join Our <br>
+                 Newsletter</h2>
+            <input type="email" placeholder="E-MAIL">
+            <button class="send">send </button>
+        </div>
+    </div>
+   </div>
+
+
+   <div class="layout">
+    <div class="hero">
+        
+        <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/blog-8.jpg" alt="">
+    </div>
+
+    <div class="coll">
+        
+        <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/image-gallery-3.jpg" alt="">
+        <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/image-gallery-4.jpg" alt="">
+        <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/image-gallery-2.jpg" alt="">
+        <img src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/img-gallery-1.jpg" alt="">
+    </div>
+   </div>
+
+   <div class="container">
+    <main class="content">
+        <h1>14 Dec Glass Wall Facade And How To <br>
+         Design it With Wooden Profiles</h1>
+        <p class="meta">POSTED AT  21:43H IN LANDSCAPE ARCHITECTURE . 0 Comments</p>
+        <hr>
+        <div class="connect">
+            <h1 class="titles"><u>Types of flooring to consider for your new apartment</u></h1>
+        </div>
+        <hr>
+        <div class="video">
+         <video   width="800px"  height="500px" controls><source src="https://bridge499.qodeinteractive.com/wp-content/uploads/2022/12/home3-3_1.mp4"></video>
+    </div>
+
+    <div class="contai">
+    <main class="conte">
+        <h1>14 Dec Hiroshi Architects New Farm Projects</h1>
+         
+        <p class="meta">POSTED AT  21:10H IN LANDSCAPE ARCHITECTURE . 0 Comments</p>
+    </main>
+    </div>
+    <footer>
+            <div class="footercont"><h1>Bridge <br>Architects</h1>
+                <div class="footersection">
+                    <h3>SOCIAL</h3>
+                    <ul>
+                        <li>Instagram</li>
+                        <li>Behance</li>
+                        <li>Linkdin</li>
+                    </ul>
+                </div>
+                <div class="footersection">
+                    <h3>INFO</h3>
+                    <ul>
+                        <li>Contact</li>
+                        <li>Terms</li>
+                        <li>Studio</li>
+                    </ul>
+                </div>
+                  <div class="footersection">
+                    <h3>CONTACT</h3>
+                   <ul>
+                    <li>12 Terra Str,NY</li>
+                    <li>+585 889 9964</li>
+                    <li>bridge@example.com</li>
+                   </ul>
+                  </div>
+            </div>
+            <div class="bottom">
+                <p>&copy; 2024 QODEINTERACTIVE</p>
+            </div>
+        </footer>
+</body>
+    </main> 
+</body>
+</html>
