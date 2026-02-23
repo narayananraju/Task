@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+.map-section{
+  position: relative;
+  height: 600px;
+}
+.map-section iframe{
+  width:100%;
+  height:100%;
+  border:none;
+  filter: grayscale(100%) brightness(30%) contrast(120%);
+  color: white;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  color: white;
+  background-image: url();
+}
+
+.logo {
+  font-size: 54px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.nav-links a.active {
+
+  padding-bottom: 5px;
+}
+.social-container {
+    display: flex;
+  gap: 15px; 
+  padding: 40px;
+}
+
+.social-icon {
+  width: 45px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: #ffffff;
+  transform: translateY(-3px);
+}
+.center-container{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-grow:1;
+}
+
+.center-container h1{
+  font-size:70px;
+  letter-spacing:3px;
+}
+
+.contact-section{
+  position:relative;
+  z-index:2;
+  margin-top:-300px; 
+  display:flex;
+  justify-content:center;
+  padding-bottom:100px;
+}
+
+.contact-container{
+  width:85%;
+  background:#f6efef;
+  padding:80px;
+  display:flex;
+  justify-content:space-between;
+  box-shadow:0 30px 60px rgba(0,0,0,0.08);
+}
+
+.contact-form{
+  width:45%;
+}
+
+.contact-form label{
+  display:block;
+  margin-bottom:10px;
+  font-size:14px;
+  color:#777;
+}
+
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  border:none;
+  border-bottom:1px solid #ccc;
+  padding:12px 0;
+  margin-bottom:40px;
+  outline:none;
+  font-size:14px;
+}
+
+.contact-form button{
+  padding:15px 50px;
+  background:transparent;
+  border:1px solid #000;
+  letter-spacing:3px;
+  font-size:12px;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.contact-form button:hover{
+  background:#000;
+  color:#fff;
+}
+
+.shop-info{
+  width:45%;
+}
+
+.shop-info h2{
+  font-family:'Playfair Display',serif;
+  font-size:42px;
+  margin-bottom:25px;
+}
+
+.shop-info h2 span{
+  font-style:italic;
+}
+
+.shop-info p{
+  color:#666;
+  line-height:1.8;
+  margin-bottom:20px;
+}
+
+.details p{
+  color:#444;
+  margin-bottom:8px;
+}
+
+.promise-section {
+  background: #ffffff;
+  padding: 120px 0;         
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
+.promise-wrapper {
+  width: 100%;
+  max-width: 1400px;         
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.promise-image {
+  width: 85%;
+  max-width: 1200px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+.footer-container {
+            color: #ffffff;
+            padding: 60px 20px;
+            text-align: center;
+            background-image: url('https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/footer-img.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        .footer-logo {
+            font-size: 42px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+        }
+
+        .footer-copyright {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 5px;
+            font-weight: 300;
+        }
+
+        .footer-tagline {
+            font-size: 14px;
+            color: #ccc;
+            margin-bottom: 30px;
+            font-style: italic;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .social-icons a {
+            color: #111;
+            background-color: #fff;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .social-icons a:hover {
+            background-color: black;
+        }
+</style>
+</head>
+
+<body>
+
+<section class="map-section">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d424141.6978944982!2d150.93197474999997!3d-33.84824395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b129838f39a743f%3A0x3017d681632a850!2sSydney%20NSW%2C%20Australia!5e0!3m2!1sen!2sin!4v1771526692605!5m2!1sen!2sin"
+    loading="lazy">
+  </iframe>
+  <header class="navbar">
+  <div class="logo">bridge</div>
+  
+  <nav class="nav-links">
+    <a href="task-41.html">HOME</a>
+    <a href="task-38.html" class="active">TEAM</a>
+    <a href="task-42.html">ABOUT</a>
+    <a href="#">CONTACT</a>
+  </nav>
+
+  <div class="social-container">
+  <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+  <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+  <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+</div>
+</header>
+</section>
+
+<section class="contact-section">
+  <div class="contact-container">
+
+    <div class="contact-form">
+      <form>
+        <label>Name*</label>
+        <input type="text" required>
+
+        <label>Email*</label>
+        <input type="email" required>
+
+        <label>Message</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">SEND</button>
+      </form>
+    </div>
+
+    <div class="shop-info">
+      <h2><span>Visit</span> our shops</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore.
+      </p>
+
+      <div class="details">
+        <p>09:00–19h Monday – Friday</p>
+        <p>75-11 Jewett Ave Jersey City, NJ 07304 USA</p>
+        <p>+ (1) 555 678 786</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="promise-section">
+  <div class="promise-wrapper">
+    <img 
+      src="https://bridge248.qodeinteractive.com/wp-content/uploads/2018/06/contact-us-img-1.png"
+      alt="Choco Promise"
+      class="promise-image"
+    >
+  </div>
+</section>
+<footer class="footer-container">
+        <div class="footer-logo">bridge</div>
+        
+        <div class="footer-copyright">
+            &copy; Copyright Qode Interactive — All Rights Reserved
+        </div>
+        
+        <div class="footer-tagline">
+            Proudly Made For You.
+        </div>
+
+        <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
