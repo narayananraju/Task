@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My code</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            border-left: 3px solid #1e457b ;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background:#1e457b;
+            padding: 14px 29px;
+            color: #fff;
+            margin: 0 10px 0 10px;
+        }
+        .logo{
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .links{
+            list-style: none;
+            display: flex;
+            gap: 38px;
+        }
+        .links a{
+            text-decoration: none;
+            color: #fff;
+            font-weight: 495;
+        }
+        .section-1{
+            display: flex;
+
+        }
+        .portion{
+            background: #ebecf0;
+            width: 35%;
+            padding: 20px  45px ;
+        }
+        .portion h3{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .portion ul{
+            list-style: none;
+        }
+        .portion li{
+               margin-bottom: 8px ;
+               
+        }
+        .section-2{
+            background-color:white;
+            width: 75%;
+            text-align: center;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-right: 300px;
+        }
+        .main-1{
+            background-color: white;
+            width: 500px;
+            height: 500px;
+            padding: 40px;
+            border: 4px solid  #212f5a;
+            border-radius: 10px ;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+        .main-1 h1{
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+            color: #212f5a;
+        }
+        .btn{
+            margin-top: 20px;
+            padding: 10px 20px;
+            background: green;
+            color: #fff;
+            border: none;
+            border-radius: 1px;
+            cursor: pointer;
+        }
+        .footer{
+            color: #212f5a ;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+        .icons{
+            font-size: 25px;
+            margin-top: 10px;
+            margin: 0 10px;
+            text-decoration: none;
+            color: #212f5a;
+            
+        }
+        .icons i{
+            font-size: 25px;
+            margin-top: 13px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+           &lt;/&gt; My Code Blog
+        </div>
+
+        <ul class="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+                
+        </ul>
+    </nav>
+
+    <div class="section-1">
+        <div class="portion">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li>HTML Basics</li>
+                <li>CSS Grid</li>
+                <li>JavaScript Intro</li>
+                <li>Web Accessibility</li>
+            </ul>
+        </div>
+
+        <div class="section-2">
+            <div class="main-1">
+                <h1>Welcome to my <br> coding journey!</h1>
+                <img src="data:image/jpeg;base64,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" alt="">
+                <div >
+                    <button class="btn" >Learn More</button>
+
+                </div>
+              
+            </div>
+             <hr>
+            <footer class="footer">
+                <p>&copy; 2024 My Coding Journey. All rights reserved.</p>
+                <div class="icons">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-telegram"></i> 
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
