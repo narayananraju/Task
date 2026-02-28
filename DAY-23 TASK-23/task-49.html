@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .chapter-1{
+            background: linear-gradient(to bottom,rgb(218, 235, 241),rgba(233, 84, 84, 0.79));
+            padding: 80px 100px;
+        }
+        .container-1{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 40px;
+        }
+        .container-1 h1{
+            font-size: 40px;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+        .container-1 p{
+            font-size:16px;
+            line-height:1.8;
+        }
+
+        .section-2{
+            display: grid;
+            grid-template-columns: 61px 122px 1fr;
+            align-items: center;
+            gap: 30px;
+            padding:35px 0;
+        }
+        .hash{
+            color: #ff6b00;
+            font-size: 30px;
+        }
+        .image img{
+            width: 150px;
+        }
+        .award-row{
+            padding-left: 40px;
+        }
+        .award-row h1{
+            margin:0 0 10px 0;
+            font-size:24px;
+        }
+        .award-row p{
+            margin:0;
+            font-size:15px;
+            color:#555;
+            line-height:1.6;
+        }
+
+        hr{
+            border: none;
+            height: 1px;
+            background: #cfcfcf;
+        }
+
+    </style>
+</head>
+<body>
+    <section class = chapter-1>
+        <div class = container-1>
+            <div>
+                <h1>Our Commitment to <br>Excellence</h1>
+                <p>Oppty  TechHub is a trailblazer in delivering innovative, client-centric<br>
+                solutions that redefine business success in the digital era. From<br>
+                cutting-edge IT services and AI-driven automation to seamless BPO,<br>
+                e-commerce, and web development, we empower organizations to thrive in a<br>
+                competitive landscape. Through our sub-brand, ProCareer.tech, we bridge<br>
+                the gap between academia and industry by equipping students with essential<br>
+                skills and connecting top talent with leading companies across India. Our<br>
+                unwavering commitment to excellence, collaboration, and integrity ensures<br>
+                we create lasting partnerships, driving sustainable growth and<br>
+                transformative outcomes for businesses and individuals alike.</p>
+            </div>
+
+            <div>
+                <div class = section-2>
+                    <div class = hash>#1</div>
+                    <div class = image>
+                        <img src = "award-img-01.png">
+                    </div>
+                    <div class = award-row>
+                       <h1>Technology Innovation Award</h1> 
+                       <p>Oppty TechHub was awarded for pioneering AI and IT solutions, driving digital transformation.</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class = section-2>
+                    <div class = hash>#2</div>
+                    <div class = image>
+                        <img src = "image-removebg-preview.png">
+                    </div>
+                    <div class = award-row>
+                       <h1>BPO Excellence Recognition</h1> 
+                       <p>We earned praise for efficent,client-focused BPO services that boost productivity.</p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class = section-2>
+                    <div class = hash>#3</div>
+                    <div class = image>
+                        <img src = "award-img-03.png">
+                    </div>
+                    <div class = award-row>
+                       <h1>E-commerce Leadership Award</h1> 
+                       <p>Our innovative e-commerce platforms were recognized for fueling online business growth.</p>
+                    </div>
+                </div>
+
+                <hr>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
