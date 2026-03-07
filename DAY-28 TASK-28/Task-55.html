@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enroll in Course</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .section-1{
+            width: 400px;
+            background: #ffffff;
+            padding: 29px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+        }
+        h1{
+            margin: 0;
+            font-size: 27px;
+        }
+        .title{
+            color: #777;
+            margin-top: 5px;
+            margin-bottom: 24px;
+        }
+        .task{
+            background: #f1f1f1;
+            border-left: 5px solid #f4c430;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 24px;
+        }
+        .task strong{
+            display: block;
+        }
+        .task span{
+            color: #777;
+            font-size: 14px;
+        }
+        label{
+            display: block;
+            font-size: 11px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-top: 14px;
+            margin-bottom: 6px;
+            color: #444;
+        }
+        input{
+            width: 100%;
+            padding: 11px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            background: #fafafa;
+        }
+        button{
+            margin-top: 24px;
+            width: 100%;
+            padding: 13px;
+            border: none;
+            border-radius: 6px;
+            background: #000;
+            color: #fff;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover{
+            background: #111;
+        }
+        select {
+            width: 106%;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #ddd;
+            font-size: 14px;
+            background: #fafafa;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="section-1">
+        <h1>Enroll in Course</h1>
+        <p class="title">Join the best instructors and start learning today.</p>
+
+        <div class="task">
+            <strong>Course: Learn UI Design with Figma</strong>
+            <span>Instructor: Daniele Buffa</span>
+        </div>
+
+        <form>
+
+            <label>FULL NAME</label>
+            <input type="text" placeholder="Enter your full name">
+
+            <label>Email ADDRESS</label>
+            <input type="email" placeholder="Email@gmail.com">
+
+            <label>SELECT EXPERIENCE LEVEL</label>
+            <select>
+                <option>1st level (0 t0 100)</option>
+                <option>2nd level (100 to 500)</option>
+                <option>3rd level (500 t0 1000)</option>
+                 <option>4th level (1000 t0 1500)</option>
+                  <option>5th level (1500 t0 2000)</option>
+
+            </select>
+
+            <button type="submit">Proceed to Payment <span>&#8594;</span></button>
+        </form>
+    </div>
+</body>
+</html>
