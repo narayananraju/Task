@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .section-1 {
+            background: black;
+            padding: 20px;
+        }
+        .section-1 h1{
+            font-size: 64px;
+            font-weight:bolder;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.2;
+            margin-bottom: 30px;
+            background: linear-gradient(to bottom,#ffffff,#b7bcc7);
+            background-clip: text;
+            color: transparent;
+        }
+
+        .container-1 {
+            text-align: center;
+            color: white;
+        }
+
+        .section-2 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 50px;
+
+        }
+
+        .container-2 {
+            background-color: rgba(255, 255, 255, 0.058);
+            width: 280px;
+            height: 320px;
+            padding: 30px;
+            border-radius: 20px;
+
+        }
+
+        .container-2:hover {
+            border: 1px solid blue;
+        }
+
+        .container-3 {
+            background-color: black;
+            width: 250px;
+            height: 200px;
+            margin-left: 10px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        
+        .container-4 {
+            width: 70px;
+            height: 80px;
+            background-color: rgb(53, 50, 50);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s ease;
+             box-shadow: 10px 10px 20px #0a0c10, -10px -10px 20px #2a2e38;
+        }
+
+        .container-4:active {
+            transform: scale(0.85);
+        }
+
+        h2 {
+            color: white;
+        }
+
+        p {
+            color: white;
+        }
+
+        .container-5 {
+            width: 140px;
+            height: 100px;
+            background-color: rgb(55, 55, 215);
+            border-radius: 20px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.4s ease;
+        }
+
+        .container-5:hover {
+            transform: skew(10deg, 5deg) rotateX(10deg) rotateY(20deg);
+        }
+
+        .span-1 {
+            font-size: 52px;
+            text-align: center;
+            padding-right: 10px;
+        }
+
+        .container-3-1 {
+            background-color: rgb(217, 212, 212);
+            width: 250px;
+            height: 200px;
+            margin-left: 10px;
+            border-radius: 20px;
+        }
+
+        .container-3-1:hover {
+            background: radial-gradient(circle at top left, #d452a7, transparent 60%),
+                radial-gradient(circle at top right, #e7d589, transparent 50%),
+                radial-gradient(circle at bottom left, #86e2e7, transparent 40%),
+                radial-gradient(circle at bottom right, #648bdf, transparent 40%),
+                #ddd;
+        }
+
+        .circle {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: radial-gradient(circle, white 30%, rgb(24, 232, 232), transparent 70%);
+            animation: zoomIn 2s infinite ease-in-out,
+                zoomOut 4s infinite linear;
+
+        }
+
+        @keyframes zoomIn {
+            0% {
+                transform: scale(0.8);
+                box-shadow: 0 0 10px rgb(40, 225, 225), 0 0 20px rgb(40, 215, 215);
+            }
+
+            50% {
+                transform: scale(1.3);
+                box-shadow: 0 0 0px rgb(40, 225, 225), 0 0 0px rgb(40, 215, 215);
+            }
+
+        }
+
+        @keyframes zoomOut {
+            0% {
+                border-color: rgb(50, 209, 226);
+            }
+
+            50% {
+                border-color: rgb(50, 209, 226);
+            }
+        }
+
+        .container-3-2 {
+            background-color: black;
+            width: 250px;
+            height: 200px;
+            margin-left: 10px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heading {
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            letter-spacing: 5px;
+
+        }
+
+        .container-3 {
+            background-color: black;
+            width: 250px;
+            height: 200px;
+            margin-left: 10px;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+
+        .box {
+            border: 1px solid rgba(255, 255, 255, 0.058);
+            width: 80px;
+            height: 35px;
+            background-color: rgba(255, 255, 255, 0.058);
+        }
+
+        .box-1 {
+            display: flex;
+            gap: 20px;
+            animation: scroll 4s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateX(-100px);
+            }
+        }
+
+        .container-3-4 {
+            width: 110px;
+            height: 110px;
+            background-color: rgb(230, 218, 218);
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            backdrop-filter: blur(8px);
+            z-index: 2;
+
+        }
+
+        .slider-cicrle {
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: rgb(240, 179, 66);
+            bottom: -30px;
+            right: -30px;
+            animation:slider 5s linear infinite alternate;
+        }
+
+        @keyframes slider {
+            0% {
+                bottom: -30px;
+                right: -30px;
+                filter: blur(0px);
+            }
+
+            50% {
+                bottom: 20px;
+                right: 20px;
+                filter: blur(6px);
+            }
+
+            100% {
+                bottom: 110px;
+                right: 110px;
+                filter: blur(0px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class=section-1>
+        <div class=container-1>
+            <h1>Advanced CSS <span>Visuals</span></h1>
+            <p>A masterclass in CSS-only shadows, animations, and image processing for modern web <br> developer</p>
+        </div>
+
+        <div class=section-2>
+            <div class=container-2>
+                <div class=container-3>
+                    <div class=container-4>
+                        <span class=span-1>&#9889</span>
+                    </div>
+                </div>
+                <h2>Soft UI Depth</h2>
+                <p>Uses dual box-shadows (light and dark) to create a tactile, extruded look. Perfect for buttons.</p>
+            </div>
+
+            <div class=container-2>
+                <div class=container-3>
+                    <div class=container-5>
+                        <h3 style = "color:white; font-size: 28px;">vip</h3>
+                    </div>
+                </div>
+                <h2>Perspective Hover</h2>
+                <p>Utilizes preserve-3d and translateZ to give elements physical volume on hover.</p>
+            </div>
+
+            <div class=container-2>
+                <div class=container-3-1></div>
+                <h2>Dynamic Filtering</h2>
+                <p>CSS filters turn grayscale images into vibrant, glowing focal points without heavy image assets.</p>
+            </div>
+
+            <div class=container-2>
+                <div class=container-3>
+                    <div class=box-1>
+                        <div class=box></div>
+                        <div class=box></div>
+                        <div class=box></div>
+                        <div class=box></div>
+                    </div>
+                </div>
+                <h2>Infinite Seamless Scroll</h2>
+                <p>A CSS only loop technique for tickers or brand logos using standard keyframe translation.</p>
+            </div>
+            <div class=container-2>
+                <div class=container-3>
+                    <div class=circle></div>
+                </div>
+                <h2>Aura Glow</h2>
+                <p>Combines multiple shadow layers with a rotating hue filter for a mesmerizing"gaming glow effect.</p>
+            </div>
+            <div class=container-2>
+                <div class=container-3>
+                    <div class="container-3-4">
+                        <div class=slider-cicrle></div>
+                    </div>
+                </div>
+                <h2>Frosted Glass Blur</h2>
+                <p>The modern standard Users backdrop-filter to distort background elements dynamically.</p>
+            </div>
+            <div class=container-2>
+                <div class=container-3-2>
+                    <h2 class=heading>ERROR</h2>
+                </div>
+                <h2>Cyberpunk Glitch</h2>
+                <p>Uses pseudo-elements and clip-path animations to creat a high-energy digital distortion effects.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
